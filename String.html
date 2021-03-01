@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+     <!--navbar-->
+     <a href="./index.html">Condition</a>
+     <a href="./String.html">String</a>
+     <a href="./Array.html">Array</a>
+     <a href="./loop.html">Loops</a>
+        <!--condition-->
+        <h2>String programs</h2>
+        <!--10. Write a js program to find length of a string.-->
+        <h3>find length</h3>
+        <p style="color: blue;" id="Ans1"></p>
+        <input type="text" id="S1" placeholder="Enter text"><br><br>
+        <button style="background-color: aquamarine;" onclick="st()">check</button> 
+        <!--11. Write a js program to copy one string to another string.-->
+        <h3>copy strings from 1 to 2</h3>
+        <p style="color: blue;" id="Ans2"></p>
+        <input type="text" id="S2" placeholder="Enter text"><br><br>
+        <input type="text" id="S3" placeholder="Enter text"><br><br>
+        <button style="background-color: aquamarine;" onclick="st1()">copy</button> 
+       <!-- Function # 12 - Concatenate two Strings -->
+       <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Concatenate Two Strings</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="conString01" class="form-control" placeholder="Enter the first string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="text" id="conString02" class="form-control" placeholder="Enter the second string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="concatenateString()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert12"></p>
+    </div>
+</div>
+<hr>
+<!-- End of Row # 04 -->
+<!-- Start of Row # 05 -->
+<div class="row my-3">
+
+<!-- Function # 13 - Compare two Strings -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Compare Two Strings</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="comString01" class="form-control" placeholder="Enter the first string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="text" id="comString02" class="form-control" placeholder="Enter the second string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="compareString()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert13"></p>
+    </div>
+
+<!-- Function # 14 - Convert string to uppercase -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Convert String to UpperCcase</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="upperString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="convertToUpperCase()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert14"></p>
+    </div>
+
+<!-- Function # 15 - Convert string to lowercase -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Convert String to LowerCase</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="lowerString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="convertToLowerCase()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert15"></p>
+    </div>
+</div>
+<hr>
+<!-- End of Row # 05 -->
+<!-- Start of Row # 06 -->
+<div class="row my-3">
+
+<!-- Function # 16 - Convert string to togglecase -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Convert String to ToggleCase</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="toggleString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="convertToToggleCase()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert16"></p>
+    </div>
+
+<!-- Function # 17 -  Find total number of alphabets, digits, and special characters in a string -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Number of Alphabets, Digits, and Special Characters</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="countString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="countCharacterType()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert17"></p>    </div>
+
+<!-- Function # 18 - Count total number of Vowels and Consonants -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Count Vowels and Consonants</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="alphabetString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="countAlphabetType()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert18"></p>
+    </div>
+</div>
+<hr>
+<!-- End of Row # 06 -->
+<!-- Start of Row # 07 -->
+<div class="row my-3">
+
+<!-- Function # 19 - Count total number of words in a string -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Number of words</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="wordsString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="countWords()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert19"></p>
+    </div>
+
+<!-- Function # 20 - Find reverse of the string -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Reverse of a String</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="revString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="reverseString()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert20"></p>
+    </div>
+
+<!-- Function # 21 - Check if the string is palindrome or not -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Check if Palindrome or Not</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="palString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="palindromeCheck()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert21"></p>    </div>
+</div>
+<hr>
+<!-- End of Row # 07 -->
+<!-- Start of Row # 08 -->
+<div class="row my-3">
+
+<!-- Function # 22 - Reverse order of words -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Reverse the words</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="revWords" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="reverseWords()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert22"></p>    </div>
+
+<!-- Function # 23 - Find first occurance of a character -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">First Occurance of a Character</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="firstOccuString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="text" id="firstOccuCharacter" class="form-control" placeholder="Enter the character"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="firstOccurance()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert23"></p>    </div>
+
+<!-- Function # 24 - Find last occurance of a character -->
+    <div class="col-sm mx-2 rounded segment">
+        <h4 class="text-center">Last Occurance of a Character</h4>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <input type="text" id="lastOccuString" class="form-control" placeholder="Enter the string"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="text" id="lastOccuCharacter" class="form-control" placeholder="Enter the character"><br><br>
+            </div>
+            <div class="form-group">
+                <input type="button" style="background-color: aquamarine;" class="btn btn-secondary" onclick="lastOccurance()" value="Check Result">
+            </div>
+        </form>
+        <p class="none" style="color: blue;" id="alert24"></p>    </div>
+</div>
+<!-- End of Row # 08 -->
+</section>
+<br><hr>    
+        <script src="./script/string.js"></script>
+</body>
+</html>
